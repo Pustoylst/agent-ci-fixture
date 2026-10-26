@@ -1,3 +1,10 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.ci-*.json
+*.backup-*
+
+# Local CI diagnostics and generated logs.
+ci_failure_log.json
+*.log
+logs/

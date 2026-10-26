@@ -1,8 +1,0 @@
-{
-  "workflow": "CI",
-  "level": "ERROR",
-  "message": "pytest failed: test_subtracts_numbers expected 1 but received 9; test_subtracts_negative_numbers expected -5 but received 1",
-  "file": "calculator.py",
-  "function": "subtract",
-  "ci_logs": "E assert 9 == 1\nE assert 1 == -5"
-}

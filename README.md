@@ -9,7 +9,7 @@
 ## Локальная проверка
 
 ```bash
-cd /Users/dima/Documents/programming/agent-ci-fixture
+cd /Users/dima/Documents/programming/agent-ci-lab/agent-ci-fixture
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -23,7 +23,7 @@ pytest -q
 Создайте пустой репозиторий на GitHub, затем выполните:
 
 ```bash
-cd /Users/dima/Documents/programming/agent-ci-fixture
+cd /Users/dima/Documents/programming/agent-ci-lab/agent-ci-fixture
 git init -b main
 git add .
 git commit -m "test: add failing CI fixture"
@@ -49,7 +49,7 @@ CI_POLL_INTERVAL_SECONDS=30
 ```bash
 cd /Users/dima/Documents/programming/PP
 source .venv/bin/activate
-python -m tools.watch_ci --repo /Users/dima/Documents/programming/agent-ci-fixture --once
+python -m tools.watch_ci --repo /Users/dima/Documents/programming/agent-ci-lab/agent-ci-fixture --once
 ```
 
 Watcher найдёт failed run, скачает логи GitHub Actions и передаст их GigaChat вместе с исходниками fixture. Он только напечатает анализ и не изменит Git.
@@ -67,7 +67,7 @@ uvicorn app.api:app --reload
 Откройте `http://127.0.0.1:8000/`, загрузите файл с ошибкой или используйте лог из Actions, укажите корень:
 
 ```text
-/Users/dima/Documents/programming/agent-ci-fixture
+/Users/dima/Documents/programming/agent-ci-lab/agent-ci-fixture
 ```
 
 Нажмите «Предложить исправление», проверьте diff и только после этого нажмите «Применить изменение». Должно быть предложено заменить:
@@ -85,7 +85,7 @@ return left - right
 После применения проверьте локально:
 
 ```bash
-cd /Users/dima/Documents/programming/agent-ci-fixture
+cd /Users/dima/Documents/programming/agent-ci-lab/agent-ci-fixture
 .venv/bin/pytest -q
 ```
 
