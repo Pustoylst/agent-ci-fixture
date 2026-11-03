@@ -4,10 +4,7 @@
 def subtract(left: int, right: int) -> int:
     """Return the difference between two integers."""
 
-    return left + right
+    return left - right
 #hi hello he 32
 #h3 32
-авптдтвап
-defs abs(a):
-    """Return abs"""
-    return abs(a)
+авптдтва
