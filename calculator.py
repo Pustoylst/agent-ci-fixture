@@ -7,4 +7,3 @@ def subtract(left: int, right: int) -> int:
     return left + right
 #hi hello he 32
 #h3 32
-фыафыал
