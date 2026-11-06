@@ -4,8 +4,9 @@
 def subtract(left: int, right: int) -> int:
     """Return the difference between two integers."""
 
-    return left - right
+    return left + right
 
 "323223"
 "23"
 "23232"
+"3232"
