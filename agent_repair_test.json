@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-07T12:00:00Z",
+  "source": "Directum / локальный тестовый лог",
+  "level": "ERROR",
+  "error_type": "AssertionError",
+  "message": "Функция subtract вернула неверный результат: для subtract(5, 4) получено 9, ожидалось 1",
+  "file": "calculator.py",
+  "function": "subtract",
+  "expected": 1,
+  "actual": 9,
+  "ci_logs": "FAILED test_calculator.py::test_subtracts_numbers\nE assert 9 == 1\nE where 9 = subtract(5, 4)\n\nПричина: функция сложила left и right вместо того, чтобы вычесть right из left.",
+  "requested_action": "Проверьте calculator.py, предложите точный diff и примените исправление только после подтверждения пользователя."
+}
