@@ -6,5 +6,10 @@ def subtract(left: int, right: int) -> int:
 
     return left + right
 
+"323223"
 "232"
-"32323232"
+"23"
+"23232"
+"3232"
+"323232"
+"23232"
