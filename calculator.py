@@ -21,3 +21,4 @@ def subtract(left: int, right: int) -> int:
 "2"
 "3223"
 "232"
+"3232"
